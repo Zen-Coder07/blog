@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Echo 的技术博客',
+  title: 'Zen-Coder07 的技术博客',
   description: '写代码、排障、折腾的记录',
   lang: 'zh-CN',
   base: '/blog/',

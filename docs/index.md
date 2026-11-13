@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: Echo 的技术博客
+  name: Zen-Coder07 的技术博客
   text: 写代码、排障、折腾的记录
   tagline: 只写跑通过的东西
   actions:
