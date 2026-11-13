@@ -6,7 +6,7 @@ export default defineConfig({
   lang: 'zh-CN',
   base: '/blog/',
   lastUpdated: true,
-  sitemap: { hostname: 'https://zen-coder07.github.io' },
+  sitemap: { hostname: 'https://zen-coder07.github.io/blog/' },
   themeConfig: {
     outline: { level: [2, 3], label: '本页目录' },
     nav: [
