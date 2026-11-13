@@ -18,7 +18,8 @@ blog/
 │  ├─ posts/
 │  │  ├─ index.md                 # 「全部文章」列表页，手工维护
 │  │  └─ 2026-11-13-hello-world.md  # 每篇文章一个文件
-│  ├─ public/                     # 图片等静态资源，原样拷到站点根
+│  ├─ public/                     # 图片、附件等静态资源，原样拷到站点根
+│  │  └─ files/                   # 可下载附件（zip、示例代码等）
 │  └─ .vitepress/
 │     ├─ config.mts               # 站点配置：标题、导航、侧边栏、搜索
 │     └─ dist/                    # 构建产物（已 gitignore，不用管）
@@ -124,6 +125,53 @@ draft: false
 ```
 
 因为配置了 `base: '/blog/'`，VitePress 会自动把 `/img/...` 处理成 `/blog/img/...`，不用手写前缀。
+
+### 附件放哪（给人下载的文件）
+
+下载类文件统一放 `docs/public/files/`（目录已建好），比如：
+
+```
+docs/public/files/demo-project.zip
+```
+
+文章里用普通链接引用：
+
+```markdown
+[下载示例项目](/files/demo-project.zip)
+```
+
+线上地址就是 `https://zen-coder07.github.io/blog/files/demo-project.zip`。
+
+**取舍原则：**
+
+| 情况 | 怎么做 |
+|---|---|
+| 几行演示代码 | 直接贴 Markdown 代码块，别传文件 |
+| 单个样例、配置、脚本（几 MB 内） | 放 `docs/public/files/`，文章里给链接 |
+| 完整项目源码 | **另开一个 GitHub 仓库**，文章里链过去 |
+
+**硬性限制：**
+
+- 单文件 100 MB 是 GitHub 的上限，超过 50 MB 会警告
+- Pages 站点总量约 1 GB
+- 二进制文件每改一次都会在 git 历史里多存一份，仓库会越来越胖——**不要反复覆盖大压缩包**
+- 放了附件就等于公开下载，别夹带密钥、账号、`.env`
+
+### 代码片段
+
+直接在文章里写带语言标识的代码块，VitePress 自带高亮：
+
+````markdown
+```java
+public class Demo {
+    public static void main(String[] args) {
+        System.out.println("hello");
+    }
+}
+```
+````
+
+这是写技术博客最常用的形式，比传附件更好检索、更好复制。
 
 \---
 
