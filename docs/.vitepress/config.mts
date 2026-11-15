@@ -16,7 +16,13 @@ export default defineConfig({
     sidebar: {
       '/posts/': [
         {
-          text: '全部文章',
+          text: 'Java',
+          items: [
+            { text: '1600 行写一个奶茶店点单系统：11 个 bug', link: '/posts/2026-11-15-milktea-saga' }
+          ]
+        },
+        {
+          text: '建站与工具',
           items: [
             { text: '开篇：这个博客怎么搭的', link: '/posts/2026-11-13-hello-world' }
           ]
