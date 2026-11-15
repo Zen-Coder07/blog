@@ -18,7 +18,8 @@ export default defineConfig({
         {
           text: 'Java',
           items: [
-            { text: '1600 行写一个奶茶店点单系统：11 个 bug', link: '/posts/2026-11-15-milktea-saga' }
+            { text: '1600 行写一个奶茶店点单系统：11 个 bug', link: '/posts/2026-11-15-milktea-saga' },
+            { text: '用 Java 写一个控制台扫雷：BFS 与 8 个调试教训', link: '/posts/2026-11-15-minesweeper' }
           ]
         },
         {
