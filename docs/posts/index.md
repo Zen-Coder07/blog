@@ -9,4 +9,5 @@
 
 ## 建站与工具
 
+- [本地 build 通过，CI 却红了：一次 VitePress 死链事故](./2026-11-16-vitepress-dead-link-ci.md)
 - [开篇：这个博客怎么搭的](./2026-11-13-hello-world.md)

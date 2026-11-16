@@ -25,6 +25,7 @@ export default defineConfig({
         {
           text: '建站与工具',
           items: [
+            { text: '本地 build 通过，CI 却红了：死链事故', link: '/posts/2026-11-16-vitepress-dead-link-ci' },
             { text: '开篇：这个博客怎么搭的', link: '/posts/2026-11-13-hello-world' }
           ]
         }
