@@ -28,10 +28,10 @@ npm run build
 # ✓ build complete
 ```
 
-CI 的报错（在本地复现时内容一致）：
+死链检查的报错是这样的（在本地复现时内容一致）：
 
 ```text
-(!) Found dead link ./2026-11-13-fullstack-crud in file posts\2026-11-13-mysql-explain-index.md
+(!) Found dead link ./2026-11-16-fullstack-crud in file posts\2026-11-16-mysql-explain-index.md
 [vitepress] 1 dead link(s) found.
 ```
 
@@ -41,8 +41,8 @@ VitePress 构建 `docs/` 下的所有 Markdown，死链检查也按「文件是�
 
 ```text
 docs/posts/
-├─ 2026-11-13-mysql-explain-index.md   # 已提交，链接指向下面几篇
-├─ 2026-11-13-fullstack-crud.md        # 未提交，本地存在
+├─ 2026-11-16-mysql-explain-index.md   # 已提交，链接指向下面几篇
+├─ 2026-11-16-fullstack-crud.md        # 未提交，本地存在
 ├─ 2026-11-13-ai-assisted-coding.md    # 未提交
 └─ java-basics.md                      # 未提交
 ```

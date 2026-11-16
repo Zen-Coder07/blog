@@ -23,6 +23,18 @@ export default defineConfig({
           ]
         },
         {
+          text: '数据库',
+          items: [
+            { text: 'EXPLAIN：索引明明加了，为什么还是没走', link: '/posts/2026-11-16-mysql-explain-index' }
+          ]
+        },
+        {
+          text: '全栈',
+          items: [
+            { text: '一个 CRUD 的全栈链路：契约是怎么断的', link: '/posts/2026-11-16-fullstack-crud' }
+          ]
+        },
+        {
           text: '建站与工具',
           items: [
             { text: '本地 build 通过，CI 却红了：死链事故', link: '/posts/2026-11-16-vitepress-dead-link-ci' },
