@@ -372,6 +372,8 @@ throw new RuntimeException("店员查询失败：" + e.getMessage(), e);
 
 [下载完整源码（zip）](/files/milktea-saga.zip)
 
+下载包就是修复后的这一版代码（每个修复点旁带注释，含下单确认页），数据库密码已替换为占位符 `YOUR_DB_PASSWORD`。
+
 ```bash
 # 1. 初始化数据库（会 DROP 并重建 milktea_saga）
 mysql -u root -p --default-character-set=utf8mb4 < sql/init.sql
